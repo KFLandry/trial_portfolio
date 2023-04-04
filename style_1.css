@@ -1,0 +1,99 @@
+*{
+	
+	margin:0;
+	list-style: none;
+	font-family: "Poppins";
+}
+body{
+	background-color: #191919;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.skills{
+	display: flex;
+	border: 2px solid white;
+	padding: 5em;
+	border-radius: 20px;
+}
+.skills .name {
+	display: flex;
+	flex-direction: column;
+	font-size: 2em;
+	font-weight: 500;
+	margin: 15px 0;
+	margin-right: 40px;
+}
+.skills::before{
+	content: "My skills";
+    position: absolute;
+	top:37px ;
+	left: 40px;
+   	background-color:#191919;
+    padding: 15px 42px;
+    font-size: 19px;
+	color: white;
+}
+@media(min-width:360px){
+	.skills::before{
+		top:37px ;
+		left: 40px;	
+	}
+}
+@media(min-width:960px){
+	.skills::before{
+		top: 45px ;
+		left: 350px;	
+	}
+}
+.skills .name span {
+    color: white;
+    margin: 15px 0;
+    box-shadow: 9.91px 9.91px 15px #d9dade,
+	 -9.91px -9.91px 15px #ffffff;
+    padding: 10px 20px;
+	 border-radius: 50px;
+    border: 2px solid #191919;
+	transition: 0.2s;
+	cursor: pointer;
+}
+.skills .name span:hover {
+	color: rgb(0, 119, 255);
+    box-shadow:
+	 inset 9.91px 9.91px 15px #d9dade,
+	 inset -9.91px -9.91px 15px #ffffff;
+}
+.bar_contenair{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.bar {
+height: 30px;
+width: 400px;
+border-radius: 20px;
+background-color:transparent;
+box-shadow:
+inset 6px 6px 6px #d9dade,
+inset -6px -6px 6px #ffffff;
+
+}
+.bar .progress{
+	height: 100%;
+	background-color:rgb(0, 119, 255) ;
+	border-radius: 20px;
+}
+.bar:nth-child(1) .progress{
+	width: 60%;
+}
+.bar:nth-child(2) .progress{
+	width: 49%;
+}
+.bar:nth-child(3) .progress{
+	width: 20%;
+}
+.bar:nth-child(4) .progress{
+	width: 40%;
+}
+
